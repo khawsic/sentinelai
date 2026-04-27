@@ -1,0 +1,12 @@
+﻿node_modules/
+.next/
+out/
+.env
+.env.local
+*.exe
+sentinel
+serviceAccountKey.json
+.firebase/
+*.log
+*.tmp
+sentinel-frontend/sentinel-frontend/
