@@ -56,6 +56,8 @@ func main() {
         protected.POST("/scan", handlers.TriggerScan)
         protected.POST("/seed", handlers.SeedDemoData)
         protected.GET("/test-gemini", handlers.TestGemini)
+        // Add this line inside the protected routes block
+protected.POST("/agent-scan", handlers.AgentScan)
     }
 
     port := os.Getenv("PORT")

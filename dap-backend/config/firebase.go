@@ -1,4 +1,4 @@
-package config
+﻿package config
 
 import (
 	"bytes"
@@ -15,7 +15,9 @@ var FirestoreBase string
 var httpClient = &http.Client{Timeout: 10 * time.Second}
 
 func InitFirebase() {
-	ProjectID = os.Getenv("GOOGLE_CLOUD_PROJECT")
+    fmt.Printf("[DEBUG] FIREBASE_PROJECT_ID = %s\n", os.Getenv("FIREBASE_PROJECT_ID"))
+    fmt.Printf("[DEBUG] FIREBASE_API_KEY = %s\n", os.Getenv("FIREBASE_API_KEY"))
+	ProjectID = os.Getenv("FIREBASE_PROJECT_ID")
 	FirestoreBase = fmt.Sprintf(
 		"https://firestore.googleapis.com/v1/projects/%s/databases/(default)/documents",
 		ProjectID,
@@ -172,3 +174,5 @@ func fromFirestoreFields(doc map[string]interface{}) map[string]interface{} {
 	}
 	return out
 }
+
+
