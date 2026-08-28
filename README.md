@@ -1,4 +1,4 @@
-﻿# SentinelAI — razzorpay ai buildathon
+﻿# SentinelAI — razorpay ai buildathon
 
 AI-powered digital asset protection platform for sports organizations.
 
