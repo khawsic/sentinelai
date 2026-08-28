@@ -1,4 +1,4 @@
-﻿# SentinelAI — Google Solution Challenge 2025
+﻿# SentinelAI — razzorpay ai buildathon
 
 AI-powered digital asset protection platform for sports organizations.
 
